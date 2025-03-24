@@ -1,9 +1,9 @@
 function objectPerson() {
     const inputs = document.querySelectorAll("input");
     const person = {};
-    inputs.forEach((input) => {
-      person[input.getAttribute("id")] = input.value;
-    });
+    // inputs.forEach((input) => {
+    //   person[input.getAttribute("id")] = input.value;
+    // });
     console.log(person);
 
     const form = document.querySelector("form");

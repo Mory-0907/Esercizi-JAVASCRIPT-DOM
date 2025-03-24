@@ -6,7 +6,9 @@ const span = document.querySelector("span");
 const button = document.querySelector("button");
 button.addEventListener("click", () => {
   span.innerText = nameInput.value;
-  sessionStorage.getItem("fistname", nameInput.value);
-  sessionStorage.getItem("email", emailInput.value);
-  sessionStorage.getItem("lastname", lastnameInput.value);
+  sessionStorage.setItem("firstname", nameInput.value);
+  sessionStorage.setItem("email", emailInput.value);
+  sessionStorage.setItem("lastname", lastnameInput.value);
 });
+
+span.innerText = sessionStorage.getItem("firstname");
